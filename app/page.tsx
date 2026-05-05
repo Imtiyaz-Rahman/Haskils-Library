@@ -7,7 +7,7 @@ export default function main() {
         {/* Title Box */}
         <div className="flex h-1/4 z-1 w-1/3 bg-alabaster justify-center rounded-md">
           <div className="flex flex-col p-6 justify-between">
-            <div className="text-lg md:text-2xl lg:text-4xl ">
+            <div className="text-lg text-black md:text-2xl lg:text-4xl">
               <h1>Haskils Library</h1>
             </div>
             {/* Logo Options */}
