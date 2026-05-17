@@ -21,7 +21,6 @@ export default function SvgComponent() {
               target="_blank"
             >
               <Image
-                className="dark:invert"
                 src="./linkedin.svg"
                 alt="Linkedin logo"
                 width={widthValue}
@@ -37,7 +36,6 @@ export default function SvgComponent() {
           <div className={stylingAnimation}>
             <Link href={"https://github.com/Imtiyaz-Rahman"} target="_blank">
               <Image
-                className="dark:invert"
                 src="./github.svg"
                 alt="Linkedin logo"
                 width={widthValue}
@@ -53,7 +51,6 @@ export default function SvgComponent() {
           <div className={stylingAnimation}>
             <Link href={"/options"} target="_blank">
               <Image
-                className="dark:invert"
                 src="./apps.svg"
                 alt="Linkedin logo"
                 width={widthValue}
