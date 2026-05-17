@@ -9,21 +9,27 @@ interface Card {
   link: string;
 }
 
-export default function cardComponent({ Card }: { Card: Card }) {
+export default function CardComponent({ card }: { card: Card }) {
   return (
-    <div className="h-3px">
-      <Link href={Card.link}>
-        <img
-          src={Card.thumbnail}
-          alt={`Thumbnail Image of ${Card.title}`}
-          className="h-full w-full"
-          loading="lazy"
-        />
-        <div>
-          <h1> {Card.title}</h1>
-          <p> {Card.description}</p>
+    <div className="mt-2 p-2 w-full md:w-[calc(50%-0.75rem)] rounded-md bg-alabaster">
+      <Link href={card.link}>
+        <div className="flex flex-col">
+          <img
+            src={card.thumbnail}
+            alt={`Thumbnail Image of ${card.title}`}
+            className="h-40 w-full object-cover rounded-md"
+            loading="lazy"
+          />
+          <div className="mt-2 text-black">
+            <h1 className="text-2xl py-2 capitalize font-extrabold antialiased">
+              {card.title}
+            </h1>
+            <p className="mt-0.5 text-sm line-clamp-4 antialiased">
+              {" "}
+              {card.description}
+            </p>
+          </div>
         </div>
-        <h1> Hello Pain </h1>
       </Link>
     </div>
   );

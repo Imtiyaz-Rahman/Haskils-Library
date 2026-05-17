@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Project One",
+        "thumbnail": "/images/minecraft.png",
+        "description": "Content Description the intention of this content is to ensure the ability to have the necessary details that help to explain the journey that I have taken in order to complete this project and make it successful",
+        "link": "/projects/1"
+    },
+    {
+        "id": 2,
+        "title": "Project Two",
+        "thumbnail": "/images/gogomeme.png",
+        "description": "This is a large overall description of the project. It includes all the key points and details that you need to know. Go go meme was for a brainless game jam",
+        "link": "/projects/2"
+    },
+    {
+        "id": 3,
+        "title": "Project three",
+        "thumbnail": "/images/minecraft.png",
+        "description": "third project description",
+        "link": "/projects/3"
+    }
+]
