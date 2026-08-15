@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/haskils-library",
-  assetPrefix: "/haskils-library/",
+  basePath: "/Haskils-Library",
+  assetPrefix: "/Haskils-Library/",
   /* config options here */
 };
 
