@@ -9,7 +9,7 @@
     {
         "id": 2,
         "title": "Project Two",
-        "thumbnail": "/images/gogomeme.png",
+        "thumbnail": "/images/dice.png",
         "description": "This is a large overall description of the project. It includes all the key points and details that you need to know. Go go meme was for a brainless game jam",
         "link": "/projects/2"
     },
