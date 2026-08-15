@@ -15,7 +15,7 @@ export default function CardComponent({ card }: { card: Card }) {
       <Link href={card.link}>
         <div className="flex flex-col">
           <img
-            src={card.thumbnail}
+            src={`/Haskils-Library${card.thumbnail}`}
             alt={`Thumbnail Image of ${card.title}`}
             className="h-40 w-full object-cover rounded-md"
             loading="lazy"

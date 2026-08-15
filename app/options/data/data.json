@@ -16,7 +16,7 @@
     {
         "id": 3,
         "title": "Project three",
-        "thumbnail": "/public/images/minecraft.png",
+        "thumbnail": "/images/minecraft.png",
         "description": "third project description",
         "link": "/projects/3"
     }
