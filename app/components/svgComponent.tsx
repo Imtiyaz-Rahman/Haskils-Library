@@ -55,7 +55,7 @@ export default function SvgComponent() {
         {/* Apps Logo */}
         <div className={stylingSpacing}>
           <div className={stylingAnimation}>
-            <Link href={"/options"} target="_blank" className="block">
+            <Link href={"/dashboard"} target="_blank" className="block">
               <Image
                 src="./apps.svg"
                 alt="Apps logo"
