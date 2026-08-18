@@ -21,7 +21,7 @@ export default function SvgComponent() {
               className="block"
             >
               <Image
-                src="./linkedin.svg"
+                src="/linkedin.svg"
                 alt="Linkedin logo"
                 width={iconSize}
                 height={iconSize}
@@ -41,7 +41,7 @@ export default function SvgComponent() {
               className="block"
             >
               <Image
-                src="./github.svg"
+                src="/github.svg"
                 alt="Github logo"
                 width={iconSize}
                 height={iconSize}
@@ -57,7 +57,7 @@ export default function SvgComponent() {
           <div className={stylingAnimation}>
             <Link href={"/dashboard"} target="_blank" className="block">
               <Image
-                src="./apps.svg"
+                src="/apps.svg"
                 alt="Apps logo"
                 width={iconSize}
                 height={iconSize}
