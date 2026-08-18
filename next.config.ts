@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: isGithubActions ? "/Haskils-Library" : "",
   assetPrefix: isGithubActions ? "/Haskils-Library/" : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubActions ? "/Haskils-Library" : "",
+  },
   images: {
     unoptimized: true,
   },
