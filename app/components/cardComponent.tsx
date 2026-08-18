@@ -10,13 +10,15 @@ interface Card {
   link: string;
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function CardComponent({ card }: { card: Card }) {
   return (
     <div className="mt-2 p-2 w-full md:w-[calc(50%-0.75rem)] rounded-md bg-alabaster shadow-2xl">
       <Link href={card.link}>
         <div className="flex flex-col">
           <Image
-            src={card.thumbnail}
+            src={`${basePath}${card.thumbnail}`}
             // src={`/Haskils-Library${card.thumbnail}`}
             width={360}
             height={360}
