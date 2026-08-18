@@ -1,16 +1,14 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 
-// const isGithubActions = process.env.GITHUB_ACTIONS === "true";
-
 const nextConfig: NextConfig = {
   output: "export",
-  // basePath: isGithubActions ? "/Haskils-Library" : "",
-  // assetPrefix: isGithubActions ? "/Haskils-Library/" : "",
-
   images: {
     unoptimized: true,
   },
+  reactStrictMode: true,
+  // basePath: "/Haskils-Library",
+  // assetPrefix: "/Haskils-Library/",
   // Configure `pageExtensions` to include markdown and MDX files
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   /* config options here */
