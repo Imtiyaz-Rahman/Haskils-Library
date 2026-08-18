@@ -18,6 +18,6 @@
     "title": "Project three",
     "thumbnail": "/images/gogomeme.png",
     "description": "third project description",
-    "link": "/projects/creating-a-game-gogomeme"
+    "link": "dashboard/projects/creating-a-game-gogomeme"
   }
 ]
