@@ -6,7 +6,7 @@ export default function SvgComponent() {
   // classname styling
   const stylingSpacing = "px-2 sm:px-3";
   const stylingAnimation =
-    "hover:opacity-80 hover:scale-110 duration-500 ease-in-out";
+    "hover:opacity-80 hover:scale-110 duration-100 ease-in-out";
   const iconSize = 100;
 
   return (
