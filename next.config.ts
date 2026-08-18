@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/Haskils-Library",
-  assetPrefix: "/Haskils-Library/",
+  basePath: isGithubActions ? "/Haskils-Library" : "",
+  assetPrefix: isGithubActions ? "/Haskils-Library/" : "",
+
   images: {
     unoptimized: true,
   },
