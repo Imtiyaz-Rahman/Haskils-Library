@@ -3,6 +3,8 @@ import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/Haskils-Library",
+  assetPrefix: "/Haskils-Library/",
   images: {
     unoptimized: true,
   },
