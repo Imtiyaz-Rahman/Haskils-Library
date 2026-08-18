@@ -18,6 +18,8 @@ export default function CardComponent({ card }: { card: Card }) {
           <Image
             src={card.thumbnail}
             // src={`/Haskils-Library${card.thumbnail}`}
+            width={360}
+            height={360}
             alt={`Thumbnail Image of ${card.title}`}
             className="h-40 w-full object-cover rounded-md"
             loading="lazy"
