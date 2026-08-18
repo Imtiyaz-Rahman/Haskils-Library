@@ -19,7 +19,6 @@ export default function CardComponent({ card }: { card: Card }) {
         <div className="flex flex-col">
           <Image
             src={`${basePath}${card.thumbnail}`}
-            // src={`/Haskils-Library${card.thumbnail}`}
             width={360}
             height={360}
             alt={`Thumbnail Image of ${card.title}`}
