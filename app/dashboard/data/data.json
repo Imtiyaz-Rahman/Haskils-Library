@@ -16,7 +16,7 @@
   {
     "id": 3,
     "title": "Project three",
-    "thumbnail": "/images/gogomeme.png",
+    "thumbnail": "./images/gogomeme.png",
     "description": "third project description",
     "link": "dashboard/projects/creating-a-game-gogomeme"
   }
