@@ -8,16 +8,16 @@
   },
   {
     "id": 2,
-    "title": "Project Two",
+    "title": "Blind Me a River (Indie Horror)",
     "thumbnail": "/images/dice.png",
-    "description": "This is a large overall description of the project. It includes all the key points and details that you need to know. Go go meme was for a brainless game jam",
-    "link": "/projects/2"
+    "description": "Creating an 3D Indie Horror game with friends using Agile and project leading skills to help support the creation of the game",
+    "link": "/dashboard/projects/bline-me-a-river"
   },
   {
     "id": 3,
-    "title": "Project three",
+    "title": "GoGoMeme a game made in 7 days",
     "thumbnail": "/images/gogomeme.png",
-    "description": "third project description",
+    "description": "Making games in a single week in a hackathon/gameJam, learning about the hardships of design, feedback and development time",
     "link": "dashboard/projects/creating-a-game-gogomeme"
   }
 ]

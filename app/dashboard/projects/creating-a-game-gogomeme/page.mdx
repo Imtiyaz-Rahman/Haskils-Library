@@ -1,6 +1,67 @@
-# Hello is it me your looking for? gogomeme
+# Creating a Game in a Jam
 
-dasdasdasd
-asdas
-da*sdasdas*dd
-sadsa
+I created a game in the brainless game Jam and "completed" the game in a week with help from my friend
+
+## Reasons:
+Was bored and felt like making a game
+Wanted to improve my technical capabilities and understanding
+The push of a competition will give a drive to finish on a deadline 
+With a week it would give a tight deadline
+
+## Short Story Description:
+I was not happy that we had to leave a previous large scale project behind (due to obligations/responsiblites). So a new plan was completing short simple projects in order to not scope creep our projects and improve our overall skills within game development.
+
+Me and my friend wanted to particapte in a game jam as a way to have a defined goal and deadline for a project to participate in, we stumbled on the [Brainless Game Jam](https://itch.io/jam/brainless-mini-game-jam) and due to its week only long focus it gave us ample oppertunity to practice skills while not overcommiting to a project.
+
+We looked around for more but there were no other oppertunties that had been applealing for us. So we waited for the count down and the game topic to be provided for the event.
+
+### Tools Used
+* Discord White Board
+* itch.io
+* Unity
+* freesound.org
+* music packs
+
+### Planning (Discord White Board)
+Within the planning phase we were told the theme (Retro) and planned accordingly. 
+
+We initially planning board and set out some ideas on how we would have wanted to work on the project
+![[BrainlessPlanBoard.png]]
+This was the initial example we had already discussion before hand as we were dead set on a platform system where the player would need to bad old memes and the player was the new meme. The main plan was being able to battle a collection of different memes who would have various attacks and you would need to parry them with the left click or the spacebar to get what you needed.
+
+This will be a 2D game in order to reduce the complications within the visuals and helping to reduce the amount of factors that are taken in order to complete the game. Along with that my friend has active understanding and ability within 2D visual design.
+
+### Unity
+I selected the platform [Unity](https://en.wikipedia.org/wiki/Unity_(game_engine)) to create the game on, as I had prior experience with the platform and have build out different games before hand. The ideal situation was to use the 2D camera system along with re-applying code to help build the initial foundations such as movement and control.
+
+Using the unity system was seamless as I had learnt how the tool functions and due to the long term existence of the platform there were various tutorials in place which I had watched and applied when making the game. 
+
+Tools which I found useful were the new Input System and the various component system. The input system was useful as it allowed you to have a control scheme that could be easily converted and used by controller system or other input controllers. This is helpful in supporting individuals who may only be able to play with certain controls or systems in place. Along with that the component system is great as it helps to create systems and structures for your models or mechanics without needed to manually code or develop the system your self which is great, allowing you to focus on game development.
+
+#### Game Structure/ Standards
+When creating  the initial game I had applied my prior knowledge in development and made a folder structure where I established the assets the materials and the location of sounds and other effects. While this may sound mundane its still a necessary skill to have structure towards your work as the future version of yourself that will be working on the project or reviewing the content you will be happy that you had a competent file structure that could be used and so will your peers or other people who will review the code. 
+
+I also made use Git and Githubs version control system so that I had a central location to backup my work. I also highly recommend git [LFS](https://git-lfs.com/) (Large File Storage) to help with storing your assets that would relatively be quite big along with a .gitignore file, there are guide and details on best practices linked [here](https://github.com/github/gitignore/blob/main/Unity.gitignore) so I recommend using it. 
+
+Along with that when working with assets I do recommend a place to store them one that I had used was google drive, while its probably not the best location I did use it to share assets with my friend who was working on the game as well. This included using the [freesound.org](https://freesound.org/) but it was a fun experience testing out funny sounds. As well as using sound software such as [Audacity](https://www.audacityteam.org/) just to level some of the audio though I wish I did learn the tool a bit better.
+
+#### Implementing Game Mechanics
+This was the rough part of trying to build the overall mechanics as I had come off making a 3D game. A problem I faced was using something like a collider which I had applied in the 3D game and worked effectively but when using it for a 2D game its functionality was different and this caused issues when I would try to implement the enemy system along with the ground system. Where with 3D games items and platforms would have automatic [colliders](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Collider2D.html), within the 2D setting I would need to ground the objects and have checks in place for the player to jump. In future I should look at examples for 2D games and plan how it would work, since the unity API is not simply just a plug an play system. I just went in with the idea that it would simply work.
+
+Another mechanic was the enemy aiming system, which just tracked the player position at all times and the bullets would spawn at set random intervals and get launched at different speeds to create variety with the game challenge. With the spawned bullets having the ability to be launched back at the enemy, with the parry mechanic.
+
+Talking about the parry mechanic, it relied on having a micro collider to spawn in front of the player and due to the bullets having a set trigger that when they interacted with the player parry collider they would be launched back in the opposite direction simply converting the velocity into a negative number and the colour being changed. When coding it all I had to do was extend out the bullet physics script to include the detail about the bullet and prep for that specific condition while just creating the collider and setting a specific tag to ensure that it would randomly be parried when not done by the player directly.
+
+Some extra features and functionality that I added was empty materials to allow the enemies to be moved back and forth, to create more of a challenge and reduce the static feeling when trying to play the game. Along with implementing a timer into a game to create more of a how long can you last type of feel and finally some instructions on the controls though very poorly done due to a lack of not knowing how the canvas systems worked.
+
+### Launching
+Once I was happy with the state of the game, or tired enough to not work on it anymore I uploaded the game. I was very curious to receive feedback on the game so I made some small posts and when people played the game they really liked the parry, idea and the art. However they did express that it did feel unfinished along with the sound being extremely loud in some instances. Which was valid criticism and I will apply that in future games through more testing and maybe making a reusable sound manager asset for games.
+### Overall
+I was happy with completing or submitting towards the project. But it was a lot of effort to commit towards something like this, I was also impacted by my lack of experience and thinking that if I understand how to build a super basic 3D game then that can be easily done in a 2D game, which was not the case. 
+
+I would also need to take action when planning out what I am going to code. Many times, I had a problem where I wanted to create a game mechanical that I think is very cool but I was unsure where to start, so I would just start randomly coding and then face a problem forcing my to write a new script which wasted time, In hind sight I should have had a set plan on how I would code something, applying the necessary research to see and find problems before needing to face it 
+when I am coding.
+
+I also should learn how to do art, as this experience has taught me that I should fill in the gaps if people are unable to do the work.
+
+In summary I am happy and would like to do game jams in the future and create more games. though that will take time and dedication. But thank you for reading and have a good day.
