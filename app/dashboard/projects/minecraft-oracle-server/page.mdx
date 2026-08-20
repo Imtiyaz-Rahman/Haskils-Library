@@ -1,9 +1,64 @@
-# Hello
+# From a VM to a free Minecraft Server
 
-Whats up bejing?
+*I created a minecraft server using a virtual machine helping to create a delocalised server that I fully controlled* 
 
-#### DSASADAS
+My Setup Repo [Oracle VM Setup](https://github.com/Imtiyaz-Rahman/Oracle_Minecraft_VM_Setup)
 
-```
-sudo rm -f /user
-```
+## Reasons:
+- Not wanting to run the system on my own hardware
+- I wanted a stable internet connection (Which I lack)
+- I wanted the server to run 24-7
+- I lacked the financials to create a custom service
+
+## Short Story Description:
+I was bored one day with my friends and they said hey lets make a minecraft server together, but because we lack the necessary finances and our previous experiences (with third party minecraft providers) it was lackluster
+
+With third party providers a concern that we had was security, all be it there was actual little research going on with the security concern. But you do work on a trust system with the third party provider, who do have access to a system that you pay for and play on.
+
+But the real concern was speed, when we used a third party server. the server would be extremely slow and the system would not work sometimes. This caused a problem as you would play and the server system would suddenly just stutter when you are playing, this would be extremely annoying. So that was the main focus of attention.
+
+With the finances part were are broke uni students and did not want to spend a dime on the payed server system. 
+
+## Tools used:
+Orcale Cloud Services(Website)
+Putty Key Generator (Convert the key and connect to the server)
+Putty (Terminal System)
+Official Minecraft Server to download the server.tar file
+Curseforge (For the Mods)
+
+### Oracle Cloud Service
+The Oracle Cloud Service was used due to its free VM machine (Limited Functionality) it works effectivly and helps to support a server system better then third party system.
+
+Created the VM with a ubuntu image and the highest possible options that the free option gave for a vm machine. This was helpful and allowed use to reach the free criteria for the server.
+
+It does take time to provision and depending on the account type I went with a Pay as you go account to provision it a lot more faster but I did go with a normal account and it took for ever to provision the service, so its your chose.
+
+But when creating a VM you will need to download the **private key** in order to connect to the server.
+
+### Putty Key Generator
+Putty Key Generator is needed to convert your key into something that putty terminal can use to connect to your VM
+simply load in your existing key that you got from Orcale services and generate the key and no you can use that with the putty service
+You can save the generated key in a separate file to use
+
+### Putty
+access
+Simply access the putty service and you will be greeted by a windows and connect to the correct host using the vpc service that will be auto generated when you create the VM in Oracle Cloud Services. Don't forget the specific port and host the you want to connect along with inserting the private key that was generated.
+
+Once done you should be able to access a terminal service that pops up with the connection to your VM, hopefully you are aware of some terminal use since you will need it to get your mods and service to function. I have also created some script to ease some of the process.
+
+Recommended:
+I created a simple folder system and updated the system with the `sudo apt update` you will need this in order to effectively run the server as some packages might not install or work correctly.
+
+### Official Minecraft Server
+Using the [official minecraft server](https://www.minecraft.net/en-us/download/server) download site you can get the necessary file to run a server and honeslty thats all you need for a vanilla minecraft server as you are able to run the server system through the CLI and you should be good just provide the IP address to the people that you want to join the server and the port (25565) **but unimportant if you use only one server** and ensure that you get the correct version for everyone to play on and it should be ok along with that ensure you get the correct java version along with the JDK version.
+
+Recommended:
+When building the server you will need to accept a EULA document I recommend doing that before hand when you install and add the java version
+
+### Curseforge
+For the modded minecraft you will need to have a forge file in order to run the mods so I recommend the wget command and get your mod files from the curseforge by using wget and make sure to unzip them. Another point is try to reach the mod files I recommend the **Network** tab in the inspect element make sure you get the correct url.
+
+You should be able to unzip the server mod pack and you should have a mods folder and use the `.jar` file to `--installServer` and you should be able to run the java command (PS: Don't forget the Eula)
+
+### Overall Value
+This was a fun project and it was also quite a headache with month long breaks but overall it was a good experience sorry I did not give a 1 for 1 guide on the VM server. I recently faced a problem where Oracle Changed their policy and they started charging for the service and I ended up getting charged. Along with that I would have added screen shots, but it has been a while since I did the server system.
