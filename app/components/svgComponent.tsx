@@ -16,7 +16,7 @@ export default function SvgComponent() {
         <div className={stylingSpacing}>
           <div className={stylingAnimation}>
             <Link
-              href={"https://www.linkedin.com/in/imtiyazrahman"}
+              href={"www.linkedin.com/in/imtiyaz-rahman"}
               target="_blank"
               className="block"
             >
